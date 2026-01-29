@@ -1,0 +1,29 @@
+Workplace Context
+Your team has successfully built a prototype for a new “TaskMaster” application using the MERN stack. The prototype exists on GitHub but has only ever been run on a local machine. Now, the project manager wants to share the prototype with a small group of stakeholders to gather early feedback.
+
+Your task is to take the existing MERN application, which is not yet configured for production, and deploy it to a live, publicly accessible URL using the free tier of a Platform-as-a-Service (PaaS) provider. This will be the first time the application is live on the internet.
+
+Your Task
+For this lab, you will fork a pre-built MERN starter application, configure it, and deploy it to the Render platform. You will need to create a free account with both MongoDB Atlas (for the database) and Render (for hosting) if you have not already done so.
+
+Your goal is to successfully deploy both the backend (as a “Web Service”) and the frontend (as a “Static Site”) and connect them so that you have a functional, live application.
+
+Assignment Resources
+Starter Application: simple-mern on GitHub 
+Deployment Guide: Deploying Your MERN Stack Application on Render 
+MongoDB Atlas: Cloud Database  (You will need to create a free account and a new cluster)
+Render: PaaS Hosting  (You will need to create a free account)
+Steps to Complete
+Fork and Clone: Fork the simple-mern repository to your own GitHub account and then clone it to your local machine.
+Create Database: Set up a new, free-tier cluster on MongoDB Atlas. Create a database and a collection for this project. Make sure to get the connection string.
+Follow the Guide: Carefully follow the deployment guide to deploy your application to Render. This will involve:
+Creating a Web Service for the backend (server directory).
+Setting the necessary environment variables in Render (like your MONGODB_URI).
+Creating a Static Site for the frontend (client directory).
+Configuring the necessary build commands and publish directories.
+Verify Deployment: Once both services are live, test the application to ensure the frontend can successfully communicate with the backend. You should be able to create and view tasks.
+You may have to make some changes to the starter code to get it to work with the deployment guide, but that is part of the deployment experience!
+
+Submission
+Submit the live URLs for both your deployed frontend static site and your backend web service on Render.
+Ensure your application is functional. A submission of non-working URLs will not receive full credit.
