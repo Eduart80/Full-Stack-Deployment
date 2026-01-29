@@ -4,7 +4,7 @@ A RESTful API built with Node.js, Express, and MongoDB for managing product inve
 
 ## Features
 
-- **CRUD Operations**: Create, read, update, and delete products
+- **CRUD Operations**: Create, read, and delete products
 - **Advanced Filtering**: Filter products by category and price range
 - **Sorting**: Sort products by price (ascending/descending)
 - **Pagination**: Paginate results with customizable page size
@@ -55,15 +55,7 @@ A RESTful API built with Node.js, Express, and MongoDB for managing product inve
 - `maxPrice` - Maximum price filter
 - `sortBy` - Sort by `price_asc` or `price_desc`
 - `page` - Page number (default: 1)
-- `limit` - Items per page (default: 10)
-
-**Examples:**
-```
-GET /api/products?category=Electronics
-GET /api/products?minPrice=10&maxPrice=100
-GET /api/products?sortBy=price_desc&page=2&limit=5
-GET /api/products?category=Electronics&minPrice=50&sortBy=price_asc
-```
+- `limit` - Items per page (default: 100)
 
 **Response:** `200 OK`
 ```json
@@ -86,9 +78,6 @@ GET /api/products?category=Electronics&minPrice=50&sortBy=price_asc
 **Response:** `200 OK` or `404 Not Found`
 
 ---
-
-### Update a Product
-**PUT** `/api/products/:id`
 
 **Body:**
 ```json

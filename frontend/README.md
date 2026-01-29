@@ -1,16 +1,49 @@
-# React + Vite
+# Frontend (React) UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This folder contains the frontend code for the MERN stack application. The UI is built using React and provides a user-friendly interface for interacting with the backend API.
 
-Currently, two official plugins are available:
+## Features
+- Product creation form
+- Product list display
+- Real-time updates after creating a product
+- Responsive and clean design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Structure
+- `src/` - Main source code
+  - `App.jsx` - Main app component
+  - `components/` - Reusable UI components
+    - `CreateProd/` - Product creation form
+    - `ProdList/` - Product list display
+    - `ProdItem/` - Individual product item
+  - `pages/` - Page-level components (e.g., HomePage)
+  - `assets/` - Static assets (images, styles)
+- `public/` - Static files
+- `index.html` - Main HTML file
 
-## React Compiler
+## How It Works
+- Users can add new products using the form.
+- The product list updates automatically after a new product is added.
+- All products are fetched from the backend and displayed in a list.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Getting Started
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. The app will be available at `http://localhost:3001`.
 
-## Expanding the ESLint configuration
+## Environment Variables
+- `VITE_API_URL` - The base URL for the backend API (set in `.env`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS
+
+---
+
