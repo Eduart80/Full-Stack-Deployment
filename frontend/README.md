@@ -34,7 +34,7 @@ This folder contains the frontend code for the MERN stack application. The UI is
    ```bash
    npm run dev
    ```
-3. The app will be available at `http://localhost:3001`.
+3. The app will be available at Render.com('https://full-stack-deployment-1.onrender.com/').
 
 ## Environment Variables
 - `VITE_API_URL` - The base URL for the backend API (set in `.env`)
