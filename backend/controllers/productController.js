@@ -2,7 +2,7 @@ const Product = require('../models/Product')
 
 async function getAllProducts( req , res ) {
     try{
-        const { category, minPrice, maxPrice, sortBy, page = 1, limit = 2 } = req.query
+        const { category, minPrice, maxPrice, sortBy, page = 1, limit = 100 } = req.query
         const filter = {}
         
         if(category){
