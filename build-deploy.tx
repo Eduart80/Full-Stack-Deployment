@@ -1,0 +1,35 @@
+========================================== 
+Steps to Deploying a Full-Stack App on Render 
+==========================================
+Backend
+Deploy Backend as ‘Web Service’ on Render
+Choose ‘Git Provider’ and then select your Backend 
+GitHub repository
+Fill out the fields
+Build Command -> npm install
+Start Command -> node server.js
+Instance Type -> Free
+Environment Variables -> Everything minus CLIENT_ORIGIN. 
+Add this after you deploy your Frontend: CLIENT_ORIGIN=<RENDER FRONTEND URL>
+Deploy Web Service
+
+Frontend
+Deploy Frontend as ‘Static Site’ on Render
+Choose ‘Git Provider’ and then select your Frontend 
+GitHub repository
+Fill out the fields
+Build Command -> npm install; npm run build
+Publish Directory -> dist (When using Vite. It may be build for other tools)
+Environment Variables -> VITE_API_URL=<RENDER BACKEND URL>
+Deploy Static Site
+Redirect and Rewrite Rules
+Source -> /*
+Destination -> index.html
+Action -> Rewrite
+Save Changes
+If you still see Not Found, 
+give it a few minutes to update and/or manually redeploy
+
+
+live at : https://full-stack-deployment-1.onrender.com/
+api: https://full-stack-deployment-6m7u.onrender.com/

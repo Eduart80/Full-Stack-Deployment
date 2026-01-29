@@ -6,12 +6,14 @@ Your task is to take the existing MERN application, which is not yet configured 
 Your Task
 For this lab, you will fork a pre-built MERN starter application, configure it, and deploy it to the Render platform. You will need to create a free account with both MongoDB Atlas (for the database) and Render (for hosting) if you have not already done so.
 
-Your goal is to successfully deploy both the backend (as a “Web Service”) and the frontend (as a “Static Site”) and connect them so that you have a functional, live application.
+Your goal is to successfully deploy both the backend (as a “Web Service”) and the frontend (as a “Static Site”) and connect them so that you 
+have a functional, live application.
 
 Assignment Resources
 Starter Application: simple-mern on GitHub 
 Deployment Guide: Deploying Your MERN Stack Application on Render 
 MongoDB Atlas: Cloud Database  (You will need to create a free account and a new cluster)
+
 Render: PaaS Hosting  (You will need to create a free account)
 Steps to Complete
 Fork and Clone: Fork the simple-mern repository to your own GitHub account and then clone it to your local machine.
