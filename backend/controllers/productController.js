@@ -76,8 +76,6 @@ async function createOneProduct( req , res ) {
 
 module.exports = {
     getAllProducts,
-    getProductById,
     createOneProduct,
-    updateProduct,
     deleteProduct
 }

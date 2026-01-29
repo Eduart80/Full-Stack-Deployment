@@ -1,9 +1,10 @@
 const express = require('express')
 const router = express.Router()
 const ProductCalls =require('../controllers/productController')
+const ProductSeed = require('../controllers/seedProduct')
 
 //seed products
-router.get('/seed', ProductCalls.seedProduct);
+router.get('/seed', ProductSeed.seedProduct);
 //get
 router.get('/api/products', ProductCalls.getAllProducts)
 //post

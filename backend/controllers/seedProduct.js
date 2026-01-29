@@ -29,7 +29,7 @@ async function seedProduct(req, res) {
         tags: "Grocery"
       },
     );
-    res.status(201).json({ message: "Database seeded." });
+    res.send("Database seeded.")
   } catch(error) {
     console.error(error);
     res.status(400).json({ error: error.message });
